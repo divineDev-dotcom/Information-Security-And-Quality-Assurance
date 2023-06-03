@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Issue Tracker</title>
+    <meta name="description" content="Issue Tracker">
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+    <script src="/public/main.js"></script>
+  </head>
+
+  <body>
+
+
+    <div class="container">
+      <!--HEADER-->
+      <header id="header">
+        <h1>
+          Issue Tracker For Project X
+        </h1>
+      </header>
+  
+      <!--NEW ISSUE FORM-->
+      <section id="issue-form">
+        <h3 id="form-header">Submit a new issue</h3>
+          <form id="newIssue">
+            <input id="title" type="text" name="issue_title" placeholder="*Title"  required=''>
+            <textarea id="textarea" type="text" name="issue_text" placeholder="*Text" required=''></textarea>
+            <input id="created" type="text" name="created_by" placeholder="*Created by" required=''>
+            <input id="assigned" type="text" name="assigned_to" placeholder="(opt)Assigned to" >
+            <input id="status" type="text" name="status_text" placeholder="(opt)Status text" >
+            <button id="submit" type="submit">Submit Issue</button>
+          </form>
+        <div id="failedNewIssue"></div>    
+      </section>
+  
+      <!--LIST OF ISSUES-->
+      <section id="issue-list">
+         
+      </section>
+  
+    </div>
+
+  </body>
+
+</html>
